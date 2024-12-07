@@ -12,6 +12,9 @@ Easy way to use Telegram bot to hide your identity. Useful for support, anonymou
 
 ## .env variables
 
+You need to specify these env variables to run this bot. If you run it locally, you can also write them in `.env` text file.
+
+``` bash
 TELEGRAM_TOKEN="7621176397:AAEK5PeSupeMOe1xp1GQcLZqn9vPde0t_Ws"  # your bot's token
 TELEGRAM_SUPPORT_CHAT_ID=-4611880511  # chat_id where the bot will forward all incoming messages
 PERSONAL_ACCOUNT_CHAT_ID=1141080523
@@ -26,6 +29,8 @@ WELCOME_MESSAGE=  # text of a message that bot will write on /start command
 REPLY_TO_THIS_MESSAGE=User above don't allow forward his messages. Reply to this message.
 # If support reply to forwarded messages with hidded sender, bor warns with next error:
 WRONG_REPLY=User above don't allow forward his messages. You must reply to bot reply under user forwarded message.
+
+```
 
 
 ## Run bot locally
