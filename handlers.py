@@ -12,8 +12,11 @@ import logging
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Отправляет приветственное сообщение при выполнении команды /start."""
     await update.message.reply_text(
-        f"{WELCOME_MESSAGE} {update.effective_user.first_name}"
-    )
+    f"Здравствуйте, {update.effective_user.first_name}! 👋 "
+    "\nДобро пожаловать в бот поддержки Hamroh. "
+    "\nЗдесь вы можете задать вопросы, оставить отзывы или сообщить о проблемах.")
+
+
 
 
 async def forward_to_group(update: Update, context: ContextTypes.DEFAULT_TYPE):
